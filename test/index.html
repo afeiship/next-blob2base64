@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="/next-js-core2/dist/next-js-core2.js"></script>
+    <script src="/next-blob2base64.js"></script>
+  </head>
+  <body>
+    <img id="image"/>
+    <script>
+      //YOUR CODES
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '/be10475f686d6c73db00.jpg');
+      xhr.responseType = 'blob';
+      xhr.onload = response;
+      xhr.send();
+
+      function response(e) {
+        console.log(this.response);
+        nx.blob2base64(this.response).then((res) => {
+          console.log('res', res);
+          document.getElementById('image').src = res;
+        });
+      }
+    </script>
+  </body>
+</html>
