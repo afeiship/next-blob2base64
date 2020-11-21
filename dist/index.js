@@ -3,7 +3,7 @@
  * description: Blob to base64.
  * homepage: https://github.com/afeiship/next-blob2base64
  * version: 1.0.0
- * date: 2020-11-21 10:33:26
+ * date: 2020-11-21 10:38:31
  * license: MIT
  */
 
